@@ -32,6 +32,9 @@ android {
     }
     defaultConfig {
         minSdkVersion 16
+        if (project.android.hasProperty('namespace')) {
+            namespace 'com.example.imagegallerysaver'
+        }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
